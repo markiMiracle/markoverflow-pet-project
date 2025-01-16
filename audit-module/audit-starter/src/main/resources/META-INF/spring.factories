@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.miracle.configuration.AuditAutoConfiguration
+org.miracle.configuration.SecuritySessionClient
