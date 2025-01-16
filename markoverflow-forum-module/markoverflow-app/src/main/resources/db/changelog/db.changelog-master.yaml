@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/01/create-users.sql
+  - include:
+      file: db/changelog/changeset/01/create-questions.sql
+  - include:
+      file: db/changelog/changeset/01/create-answers.sql
+  - include:
+      file: db/changelog/changeset/01/create-comments.sql
