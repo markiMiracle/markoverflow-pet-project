@@ -16,7 +16,7 @@ public interface QuestionService {
      * Метод, создающий новый вопрос пользователя
      * @param dto - DTO вопроса пользователя
      */
-    String create(QuestionDTO dto);
+    void create(QuestionDTO dto);
 
     /**
      * Метод, возвращающий данные вопроса пользователя

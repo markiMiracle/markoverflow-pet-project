@@ -36,12 +36,11 @@ public class QuestionServiceImpl implements QuestionService {
 
     @ForumAudit("Создание вопроса")
     @Override
-    public String create(QuestionDTO dto) {
+    public void create(QuestionDTO dto) {
         Question question = mapper.map(dto);
         User user = userService.findUser();
         question.setAuthor(user);
         repository.save(question);
-        return WebUtils.getCookie(request, "SESSIONID").getValue();
     }
 
     @Override
