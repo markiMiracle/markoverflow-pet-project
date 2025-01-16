@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+gateway:
+  routes:
+    - contextPath: ${SECURITY_CONTEXT_PATH:/security/**}
+      uri: ${SECURITY_URI:http://localhost:8080}
+    - contextPath: ${OVERFLOW_CONTEXT_PATH:/overflow/**}
+      uri: ${OVERFLOW_URI:http://localhost:8082}
