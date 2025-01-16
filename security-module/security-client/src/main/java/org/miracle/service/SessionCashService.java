@@ -5,7 +5,7 @@ import org.miracle.dto.SessionDTO;
 /**
  * Сервис для получения сессии клиента
  *
- * @author Kharitonov Andrei
+ * @author Mark Valiev
  * @since 22.08.2024
  */
 public interface SessionCashService {

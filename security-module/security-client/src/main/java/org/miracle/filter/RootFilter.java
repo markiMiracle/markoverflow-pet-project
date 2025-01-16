@@ -34,7 +34,7 @@ public class RootFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-        log.info("Root-token validation in progressss");
+        log.info("Root-token validation in progress");
 
         var tokenCookie = WebUtils.getCookie(request, TOKEN_ROOT_COOKIE_NAME);
         if (tokenCookie == null || tokenCookie.getValue().isEmpty()) {
@@ -47,8 +47,7 @@ public class RootFilter implements Filter {
             log.info("Validation successful");
             chain.doFilter(request, response);
         } catch (Exception ex) {
-
-            log.info("Validation faileeeeed, {}", ex.toString());
+            log.info("Validation failed, {}", ex.toString());
             response.sendError(HttpServletResponse.SC_FORBIDDEN);
         }
     }

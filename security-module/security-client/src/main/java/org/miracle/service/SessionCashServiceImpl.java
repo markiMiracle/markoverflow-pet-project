@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Реализация {@link SessionCashService}
  *
- * @author Kharitonov Andrei
+ * @author Mark Valiev
  * @since 22.08.2024
  */
 @Slf4j
